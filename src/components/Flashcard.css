@@ -1,0 +1,207 @@
+.flashcard {
+  width: 650px;
+  height: 450px;
+  perspective: 1000px;
+  cursor: pointer;
+  margin: 20px auto;
+}
+
+.flashcard-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+.flashcard.flipped .flashcard-inner {
+  transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  padding: 30px;
+  box-sizing: border-box;
+}
+
+.flashcard-front {
+  background: #f8f9fa;
+  color: #333;
+}
+
+.flashcard-back {
+  background: #e9ecef;
+  color: #333;
+  transform: rotateY(180deg);
+}
+
+.card-label {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  opacity: 0.9;
+}
+
+.card-content {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flip-hint {
+  font-size: 16px;
+  opacity: 0.7;
+  margin-top: 15px;
+  font-style: italic;
+}
+
+.flashcard:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.flashcard:hover .flashcard-inner {
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.12);
+}
+
+/* Difficulty-based color schemes */
+
+/* Easy difficulty - Blue theme */
+.flashcard.difficulty-easy .flashcard-front {
+  background: #4a90e2;
+  color: white;
+}
+
+.flashcard.difficulty-easy .flashcard-back {
+  background: #357abd;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Medium difficulty - Orange theme */
+.flashcard.difficulty-medium .flashcard-front {
+  background: #f5a623;
+  color: white;
+}
+
+.flashcard.difficulty-medium .flashcard-back {
+  background: #e8951e;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Hard difficulty - Purple theme */
+.flashcard.difficulty-hard .flashcard-front {
+  background: #7b68ee;
+  color: white;
+}
+
+.flashcard.difficulty-hard .flashcard-back {
+  background: #6a5acd;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+/* Card header and badges */
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.card-badges {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.difficulty-badge {
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.difficulty-badge.easy {
+  background: rgba(255, 255, 255, 0.9);
+  color: #4a90e2;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.difficulty-badge.medium {
+  background: rgba(255, 255, 255, 0.9);
+  color: #f5a623;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.difficulty-badge.hard {
+  background: rgba(255, 255, 255, 0.9);
+  color: #7b68ee;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.category-badge {
+  padding: 6px 12px;
+  border-radius: 14px;
+  font-size: 12px;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Category badge colors for each difficulty */
+.flashcard.difficulty-easy .category-badge {
+  color: #4a90e2;
+}
+
+.flashcard.difficulty-medium .category-badge {
+  color: #f5a623;
+}
+
+.flashcard.difficulty-hard .category-badge {
+  color: #7b68ee;
+}
+
+/* Remove special styling for medium difficulty category badges */
+
+/* Image styling */
+.card-image {
+  width: 100%;
+  max-width: 320px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin: 15px 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Adjust layout for cards with images */
+.flashcard-front:has(.card-image),
+.flashcard-back:has(.card-image) {
+  padding: 25px;
+}
+
+.flashcard-front:has(.card-image) .card-content,
+.flashcard-back:has(.card-image) .card-content {
+  font-size: 22px;
+  margin-top: 10px;
+}

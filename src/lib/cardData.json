@@ -1,0 +1,107 @@
+[
+  { 
+    "question": "What does CPU stand for?", 
+    "answer": "Central Processing Unit",
+    "category": "Hardware",
+    "difficulty": "easy",
+    "image": "/hardware.png"
+  },
+  { 
+    "question": "What programming language is known as the 'mother of all languages'?", 
+    "answer": "Assembly Language",
+    "category": "Programming",
+    "difficulty": "medium",
+    "image": "/programming.png"
+  },
+  { 
+    "question": "What does HTML stand for?", 
+    "answer": "HyperText Markup Language",
+    "category": "Web Development",
+    "difficulty": "easy",
+    "image": "/web development.jpg"
+  },
+  { 
+    "question": "What is the time complexity of binary search?", 
+    "answer": "O(log n)",
+    "category": "Programming",
+    "difficulty": "hard",
+    "image": "/programming.png"
+  },
+  { 
+    "question": "What does API stand for?", 
+    "answer": "Application Programming Interface",
+    "category": "Web Development",
+    "difficulty": "medium",
+    "image": "/web development.jpg"
+  },
+  { 
+    "question": "Which data structure follows LIFO principle?", 
+    "answer": "Stack",
+    "category": "Programming",
+    "difficulty": "medium",
+    "image": "/programming.png"
+  },
+  { 
+    "question": "What does SQL stand for?", 
+    "answer": "Structured Query Language",
+    "category": "Database",
+    "difficulty": "easy",
+    "image": "/database.jpg"
+  },
+  { 
+    "question": "What is the default port for HTTP?", 
+    "answer": "Port 80",
+    "category": "Networking",
+    "difficulty": "medium",
+    "image": "/networking.jpg"
+  },
+  { 
+    "question": "What does OOP stand for?", 
+    "answer": "Object-Oriented Programming",
+    "category": "Programming",
+    "difficulty": "easy",
+    "image": "/programming.png"
+  },
+  { 
+    "question": "Which sorting algorithm has the best average-case time complexity?", 
+    "answer": "Merge Sort (O(n log n))",
+    "category": "Programming",
+    "difficulty": "hard",
+    "image": "/programming.png"
+  },
+  { 
+    "question": "What does JSON stand for?", 
+    "answer": "JavaScript Object Notation",
+    "category": "Web Development",
+    "difficulty": "easy",
+    "image": "/web development.jpg"
+  },
+  { 
+    "question": "What is the base of the binary number system?", 
+    "answer": "Base 2",
+    "category": "Hardware",
+    "difficulty": "easy",
+    "image": "/hardware.png"
+  },
+  { 
+    "question": "What does IDE stand for?", 
+    "answer": "Integrated Development Environment",
+    "category": "Programming",
+    "difficulty": "easy",
+    "image": "/programming.png"
+  },
+  { 
+    "question": "Which protocol is used for secure web browsing?", 
+    "answer": "HTTPS",
+    "category": "Networking",
+    "difficulty": "medium",
+    "image": "/networking.jpg"
+  },
+  { 
+    "question": "What does RAM stand for?", 
+    "answer": "Random Access Memory",
+    "category": "Hardware",
+    "difficulty": "easy",
+    "image": "/hardware.png"
+  }
+]
