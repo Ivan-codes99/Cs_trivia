@@ -5,6 +5,164 @@
   text-align: center;
 }
 
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.header {
+  margin-bottom: 2rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.description {
+  font-size: 1.1rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
+
+.card-count {
+  font-size: 1rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.flashcard-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.navigation-buttons {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.nav-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #4a90e2;
+  background: #4a90e2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.nav-button:hover:not(.disabled) {
+  background: #357abd;
+  border-color: #357abd;
+  transform: translateY(-1px);
+}
+
+.nav-button.disabled {
+  background: #ccc;
+  border-color: #ccc;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.nav-button.disabled:hover {
+  transform: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.shuffle-button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border: 2px solid #f5a623;
+  background: #f5a623;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.shuffle-button:hover {
+  background: #e8951e;
+  border-color: #e8951e;
+  transform: translateY(-1px);
+}
+
+.shuffle-indicator {
+  font-size: 0.9rem;
+  color: #f5a623;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.mastered-count {
+  font-size: 1rem;
+  color: #28a745;
+  font-weight: 500;
+  margin-top: 0.5rem;
+}
+
+.streak-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  background: #f8f9fa;
+  border-radius: 12px;
+  border: 2px solid #e9ecef;
+}
+
+.streak-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.streak-label {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.streak-value {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  min-width: 60px;
+  text-align: center;
+}
+
+.streak-value.current {
+  background: #4a90e2;
+  color: white;
+  box-shadow: 0 2px 8px rgba(74, 144, 226, 0.3);
+}
+
+.streak-value.longest {
+  background: #f5a623;
+  color: white;
+  box-shadow: 0 2px 8px rgba(245, 166, 35, 0.3);
+}
+
 .logo {
   height: 6em;
   padding: 1.5em;
